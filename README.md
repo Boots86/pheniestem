@@ -1,0 +1,1 @@
+This is a site my daughter created for her elementary school Science Technology Engineering and Mathematics (STEM) showcase competition.  Currently not optimized for mobile devices.  It seems to work well for Chrome on Android but iPhone users may have issues.  This is primarily b/c the magic of the interactive map is based on hover events.
