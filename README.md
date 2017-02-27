@@ -6,7 +6,7 @@ Things to try to fix this:
 
 Things that probably won't help:
 + Target pseudoclass because it requires navigating to new link actually
-  +could try having the target be a link to a target of the original page, but this requires page reloads
+  could try having the target be a link to a target of the original page, but this requires page reloads
 + Exceedingly long transition effect because no way to get back to the original state
 
 If she gets really into it we might throw in some javascript that should do it easily, but I'd prefer a pure CSS/HTML solution.
