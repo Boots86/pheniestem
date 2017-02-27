@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css?family=Candal|Raleway');
+
+:root {
+  --main-color: #58d68d;
+  --accent-color: #28b463;
+  --highlight-color: #F4D03F;
+  --nav-text-color: #5499C7;
+  --lowlight-color: #0B5345;
+  --main-text-color: #212f3c;
+  --menu-text-color: #1C2833;
+}
+
+
+html, body {
+  width: 100vw;
+  min-height: 900px;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  float: left;
+  background-color: var(--accent-color);
+  width: 100vw;
+  height: 60px;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  color: var(--menu-text-color);
+  font-family: Candal, sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+
+main {
+  position: relative;
+  margin: 20px 0;
+  /*background-image: url(../images/texas.png);
+  background-size: 770px 776px;
+  background-repeat: no-repeat;
+  background-position: center;*/
+  /*background-color: var(--main-color);*/
+  min-width: 75%;
+  width: 100vw;
+  height: 500px;
+  float: left;
+  color: var(--main-text-color);
+  padding-left: calc(50vw - 150px);
+  padding-right: calc(50vw - 150px);
+  padding-top: 25px;
+}
+
+main ul {
+  list-style: none;
+  list-style-type: none;
+}
+main li {
+  display: inline-block;
+}
+figcaption {
+  opacity: 0;
+  -webkit-transition: all 0.6s ease-out 0s;
+  -moz-transition: all 0.6s ease-out 0s;
+  -ms-transition: all 0.6s ease-out 0s;
+  -o-transition: all 0.6s ease-out 0s;
+  transition: all 0.6s ease-out 0s;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+figure:hover figcaption {
+  position: relative;
+  max-width: 35vw;
+  opacity: 0.9;
+  padding: 1em 2em;
+  text-shadow: 0px 0px 4px white;
+  font-family: fantasy;
+  box-shadow: 0 0 18px black;
+}
+
+#dallas {
+  position: absolute;
+  top: 120px;
+  left: calc((100vw - 300px)/2 + 204px);
+  z-index: 98;
+}
+
+#dallas figure:hover figcaption {
+  top: -13px;
+  left: 12px;
+  background-image: url("../images/dallasskyline.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0px 60px 60px;
+  z-index: 10;
+}
+
+#ftworth {
+  position: absolute;
+  top: 116px;
+  left: calc((100vw - 300px)/2 + 190px);
+  z-index: 99;
+}
+
+#ftworth figure:hover figcaption {
+  top: -13px;
+  left: -198px;
+  background-image: url("../images/fortworthskyline.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 60px 0px 60px 60px;
+  z-index: 100;
+}
+
+#portoconnor {
+  position: absolute;
+  top: 226px;
+  left: calc((100vw - 300px)/2 + 216px);
+  z-index: 99;
+
+}
+
+#portoconnor figure:hover figcaption {
+  top: -158px;
+  left: -162px;
+  background-image: url("../images/portoconnor.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 60px 60px 0px 60px;
+  z-index: 100;
+}
+
+#testing {
+  position: relative;
+  bottom: 10vw;
+  left: 10vw;
+}
+
+.hoverpic {
+  opacity: 0;
+  -webkit-transition: all 0.6s ease-out 0s;
+  -moz-transition: all 0.6s ease-out 0s;
+  -ms-transition: all 0.6s ease-out 0s;
+  -o-transition: all 0.6s ease-out 0s;
+  transition: all 0.6s ease-out 0s;
+}
+
+.hoverpic:hover {
+  opacity: 1;
+}
+
+.hoverpic:hover .hovertext {
+  display: block;
+  opacity: 0.9;
+  background-color: gray;
+  font-size: 1em;
+  width: auto;
+  height: auto;
+}
+
+.hovertext {
+  display: none;
+  font-size: 0px;
+  width: 0px;
+  height: 0px;
+  /*-webkit-transition: all 0.6s ease-out 0s;
+  -moz-transition: all 0.6s ease-out 0s;
+  -ms-transition: all 0.6s ease-out 0s;
+  -o-transition: all 0.6s ease-out 0s;
+  transition: all 0.6s ease-out 0s;*/
+}
+
+#dallastext.hovertext  {
+  background-image: url("../images/dallasskyline.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 60px 60px 60px 0px;
+  z-index: 100;
+  padding: 10px;
+  opacity: 0.9;
+  padding: 1em 2em;
+  text-shadow: 0px 0px 4px white;
+  font-family: fantasy;
+  box-shadow: 0 0 18px black;
+  position: relative;
+  top: -260px;
+  left: 177px;
+  /*-webkit-transition: all 0.6s ease-out 0s;
+  -moz-transition: all 0.6s ease-out 0s;
+  -ms-transition: all 0.6s ease-out 0s;
+  -o-transition: all 0.6s ease-out 0s;
+  transition: all 0.6s ease-out 0s;*/
+}
+
+#ftworthtext.hovertext  {
+  background-image: url("../images/fortworthskyline.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 60px 60px 0px 60px;
+  z-index: 100;
+  padding: 10px;
+  opacity: 0.9;
+  padding: 1em 2em;
+  text-shadow: 0px 0px 4px white;
+  font-family: fantasy;
+  box-shadow: 0 0 18px black;
+  position: relative;
+  top: -266px;
+  left: -81px;
+  /*-webkit-transition: all 0.6s ease-out 0s;
+  -moz-transition: all 0.6s ease-out 0s;
+  -ms-transition: all 0.6s ease-out 0s;
+  -o-transition: all 0.6s ease-out 0s;
+  transition: all 0.6s ease-out 0s;*/
+}
+
+#poctext.hovertext  {
+  background-image: url("../images/portoconnor.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 60px 0px 60px 60px;
+  z-index: 100;
+  padding: 10px;
+  opacity: 0.9;
+  padding: 1em 2em;
+  text-shadow: 0px 0px 4px white;
+  font-family: fantasy;
+  box-shadow: 0 0 18px black;
+  position: relative;
+  top: -104px;
+  left: -18px;
+  /*-webkit-transition: all 0.6s ease-out 0s;
+  -moz-transition: all 0.6s ease-out 0s;
+  -ms-transition: all 0.6s ease-out 0s;
+  -o-transition: all 0.6s ease-out 0s;
+  transition: all 0.6s ease-out 0s;*/
+}
+
+footer {
+  color: var(--menu-text-color);
+  background-color: var(--accent-color);
+  min-width: 75%;
+  width: 100vw;
+  height: 4em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  float: right;
+  text-align: right;
+  padding-right: 16px;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+[tooltip] {
+  position: relative;
+}
+
+[tooltip]::before,
+[tooltip]::after {
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  opacity: 0;
+  text-transform: none;
+  font-size: 0.8em;
+}
+
+[tooltip]::before {
+  content: '';
+  z-index: 1001;
+  border: 5px solid transparent;
+}
+
+[tooltip]::after {
+    content: attr(tooltip); /* magic! */
+    z-index: 1000;
+
+    /* most of the rest of this is opinion */
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+
+    /*
+    Let the content set the size of the tooltips
+    but this will also keep them from being obnoxious
+    */
+    min-width: 3em;
+    max-width: 21em;
+    white-space: nowrap;
+    overflow: visible;
+    /*text-overflow: ellipsis;*/
+
+    /* visible design of the tooltip bubbles */
+    padding: 10px 15px;
+    border-radius: 3px;
+    box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+    background: #333;
+    color: #fff;
+}
+
+[tooltip]:hover::before,
+[tooltip]:hover::after {
+    display: block;
+}
+
+/*li {
+  position: relative;
+  left: 680px;
+  top: 280px;
+}*/
+
+/* don't show empty tooltips */
+[tooltip]=''::before,
+[tooltip]=''::after {
+    display: none !important;
+}
+
+/* ONLY the ::before */
+[tooltip]:not([flow])::before,
+[tooltip][flow^="up"]::before {
+    bottom: 100%;
+    border-bottom-width: 0;
+    border-top-color: #333;
+}
+
+/* ONLY the ::after */
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::after {
+    bottom: calc(100% + 5px);
+}
+
+/* Both ::before & ::after */
+[tooltip]:not([flow])::before,
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::before,
+[tooltip][flow^="up"]::after {
+    left: 12.5px;
+    transform: translate(-50%, -.5em);
+}
+
+@keyframes tooltips-vert {
+  to {
+    opacity: .9;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes tooltips-horz {
+  to {
+    opacity: .9;
+    transform: translate(0, -50%);
+  }
+}
+
+[tooltip]:not([flow]):hover::before,
+[tooltip]:not([flow]):hover::after,
+[tooltip][flow^="up"]:hover::before,
+[tooltip][flow^="up"]:hover::after,
+[tooltip][flow^="down"]:hover::before,
+[tooltip][flow^="down"]:hover::after {
+  background-image: url("../images/dallasskyline.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+    animation:
+        tooltips-vert
+        300ms
+        ease-out
+        forwards;
+}
+
+[tooltip][flow^="left"]:hover::before,
+[tooltip][flow^="left"]:hover::after,
+[tooltip][flow^="right"]:hover::before,
+[tooltip][flow^="right"]:hover::after {
+    animation:
+        tooltips-horz
+        300ms
+        ease-out
+        forwards;
+}

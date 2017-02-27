@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+:root {
+  --main-color: #DBA866;
+  --accent-color: #D49BE1;
+  --highlight-color: #E9857A;
+  --nav-text-color: #9B8762;
+  --lowlight-color: #7B8145;
+  --main-text-color: #93181B;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 98vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--main-color);
+  box-shadow: 0px 2px 7px var(--main-text-color);
+}
+
+header nav {
+  text-align: center;
+  height: 40px;
+
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+}
+header li {
+  display: inline;
+  color: var(--nav-text-color);
+  line-height: 40px;
+}
+header a {
+  /*border: 0.5em solid var(--main-color);*/
+  color: var(--nav-text-color);
+  text-decoration: none;
+  font-family: 'Indie Flower', sans-serif;
+  font-weight: bold;
+  padding: 0px 5px;
+}
+
+header a:hover {
+  /*border: 0.5em solid var(--nav-text-color);*/
+  color: var(--main-color);
+  background-color: var(--nav-text-color);
+}
+
+body {
+  background-image: url("../images/wallpaper.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  color: var(--main-text-color);
+  position: relative;
+}
+body ul {
+  list-style: none;
+}
+
+#texas {
+  padding-top: 25px;
+  padding-left: calc((100vw - 400px)/2);
+  padding-right: calc((100vw - 400px)/2);
+}
+
+#col-left {
+  background-color: rgba(255,255,255, 0.3);
+  width: 40vw;
+  height: 500px;
+  border: 10px solid var(--lowlight-color);
+  border-radius: 36px;
+  float: left;
+  margin: 20px 4vw auto 5vw;
+  padding: 16px 7.5vw;
+  }
+
+#col-right {
+  background-color: rgba(255,255,255, 0.3);
+  width: 40vw;
+  height: 200px;
+  border: 10px solid var(--highlight-color);
+  border-radius: 36px;
+  float: left;
+  margin: 20px 5vw auto 4vw;
+  padding: 5px 7.5vw;
+}
+
+#col-right-lower {
+  width: 40vw;
+  margin: 20px 5vw auto 4vw;
+  padding: 5px 7.5vw;
+  float: left;
+}
+
+img.resize{
+   max-width:25vw;
+   border-radius: 36px;
+}
+
+.hoverpic {
+  opacity: 0;
+  -webkit-transition: all 0.6s ease-out 0s;
+  -moz-transition: all 0.6s ease-out 0s;
+  -ms-transition: all 0.6s ease-out 0s;
+  -o-transition: all 0.6s ease-out 0s;
+  transition: all 0.6s ease-out 0s;
+}
+
+.hoverpic:hover {
+  opacity: 1;
+}
+
+.hovertext {
+  display: none;
+}
+
+.hoverpic:hover .hovertext {
+  display: inline-block;
+  opacity: 0.9;
+  font-size: 1em;
+  width: auto;
+  height: auto;
+}
+
+#dallas {
+  position: absolute;
+  top: 188px;
+  left: calc((100vw - 400px)/2 + 303px);
+}
+
+#dallastext.hovertext  {
+  background-image: url("../images/dallasskyline.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 60px 60px 60px 0px;
+  z-index: 100;
+  opacity: 0.9;
+  padding: 1em 2em;
+  text-shadow: 0px 0px 4px white;
+  font-family: fantasy;
+  box-shadow: 0 0 18px black;
+  width: 300px;
+  position: absolute;
+  top: -160px;
+  left: 8px;
+  border: 4px solid var(--main-text-color);
+}
+
+#ftworth {
+  position: absolute;
+  top: 185px;
+  left: calc((100vw - 400px)/2 + 285px);
+}
+
+#ftworthtext.hovertext  {
+  background-image: url("../images/fortworthskyline.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 60px 60px 0px 60px;
+  z-index: 100;
+  padding: 1em 2em;
+  opacity: 0.9;
+  text-shadow: 0px 0px 4px white;
+  font-family: fantasy;
+  box-shadow: 0 0 18px black;
+  width: 300px;
+  position: absolute;
+  top: -160px;
+  left: -290px;
+  border: 4px solid var(--main-text-color);
+}
+
+#poc {
+  position: absolute;
+  top: 315px;
+  left: calc((100vw - 400px)/2 + 309px);
+}
+
+#poctext.hovertext  {
+  background-image: url("../images/portoconnor.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 60px 60px 0px 60px;
+  z-index: 100;
+  padding: 1em 2em;
+  opacity: 0.9;
+  text-shadow: 0px 0px 4px white;
+  font-family: fantasy;
+  box-shadow: 0 0 18px black;
+  width: 300px;
+  position: absolute;
+  top: -160px;
+  left: -290px;
+  border: 4px solid var(--main-text-color);
+}
