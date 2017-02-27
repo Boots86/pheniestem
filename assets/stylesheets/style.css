@@ -75,7 +75,7 @@ body ul {
 #col-left {
   background-color: rgba(255,255,255, 0.3);
   width: 40vw;
-  height: 500px;
+  /*height: 500px;*/
   border: 10px solid var(--lowlight-color);
   border-radius: 36px;
   float: left;
@@ -86,7 +86,7 @@ body ul {
 #col-right {
   background-color: rgba(255,255,255, 0.3);
   width: 40vw;
-  height: 200px;
+  /*height: 200px;*/
   border: 10px solid var(--highlight-color);
   border-radius: 36px;
   float: left;
